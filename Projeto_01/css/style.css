@@ -1,0 +1,145 @@
+﻿/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+@font-face {
+    src: url('../fonts/OpenSans-Light.ttf');
+    font-family: "Open Sans";
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Banner */
+.banner {
+	flex: 1;
+    background-image: url('../images/baba.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px 2%;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.book-info {
+    background-color: rgb(59, 55, 55, 0.55);
+    padding: 30px;
+    width: 45%;
+    border-radius: 10px;
+}
+
+.book-info ul {
+    list-style-position: inside;
+}
+
+.book-info ul li {
+    margin-top: 18px;
+}
+
+.book-info h2 {
+    margin-top: 8px;
+}
+
+.book-info h1 {
+    margin-bottom: 8px;
+}
+
+.form-container {
+    text-align: center;
+    width: 45%;
+}
+
+.form-image {
+    background-image: url('../images/OIP.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 380px;
+    margin-bottom: 20px;
+}
+
+.download-button {
+    display: inline-block;
+    background-color: #FFA500;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #FF7F00;
+}
+
+/* Rodapé */
+.site-footer {
+	text-align: center;
+    color: white;
+    margin-top: 60px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    .site-header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .banner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .book-info,
+    .form-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .site-header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .banner-content {
+        padding: 0 4%;
+    }
+
+    .book-info {
+        padding: 20px;
+    }
+}
